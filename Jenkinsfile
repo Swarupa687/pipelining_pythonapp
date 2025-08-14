@@ -8,7 +8,7 @@ Pipeline {
     stages {
         stage('Clone GitHub Repo') {
             steps {
-                git branch: 'main', credentialsId: 'github-https',
+                git branch: 'main', credentialsId: 'git-https',
                     url: 'https://github.com/Swarupa687/pipelining_pythonApp.git'
             }
         }
